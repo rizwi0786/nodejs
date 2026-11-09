@@ -1,0 +1,322 @@
+# Lesson slugs (keys for src/data/content/mNN/index.ts)
+
+## m01 — JavaScript Foundations for Node.js (21 lessons)
+- `javascript-execution-fundamentals` — JavaScript execution fundamentals
+- `var-let-and-const` — var, let and const
+- `primitive-and-reference-types` — Primitive and reference types
+- `type-coercion` — Type coercion
+- `operators` — Operators
+- `functions` — Functions
+- `arrow-functions` — Arrow functions
+- `scope-and-closures` — Scope and closures
+- `hoisting` — Hoisting
+- `this-keyword` — this keyword
+- `objects-and-prototypes` — Objects and prototypes
+- `classes-and-inheritance` — Classes and inheritance
+- `arrays-and-array-methods` — Arrays and array methods
+- `destructuring` — Destructuring
+- `spread-and-rest-operators` — Spread and rest operators
+- `map-set-weakmap-and-weakset` — Map, Set, WeakMap and WeakSet
+- `error-handling` — Error handling
+- `promises` — Promises
+- `async-await` — Async/await
+- `event-loop-fundamentals` — Event loop fundamentals
+- `es6-plus-features` — ES6+ features
+
+## m02 — Introduction to Node.js (17 lessons)
+- `what-is-node-js` — What is Node.js?
+- `why-node-js` — Why Node.js?
+- `node-js-vs-browser-javascript` — Node.js vs Browser JavaScript
+- `node-js-vs-other-backend-technologies` — Node.js vs other backend technologies
+- `history-and-evolution` — History and evolution
+- `node-js-use-cases` — Node.js use cases
+- `advantages-and-limitations` — Advantages and limitations
+- `installing-node-js` — Installing Node.js
+- `node-js-runtime` — Node.js runtime
+- `running-javascript-files` — Running JavaScript files
+- `repl` — REPL
+- `node-js-architecture` — Node.js architecture
+- `v8-engine` — V8 engine
+- `libuv` — libuv
+- `single-threaded-architecture` — Single-threaded architecture
+- `non-blocking-i-o` — Non-blocking I/O
+- `event-driven-architecture` — Event-driven architecture
+
+## m03 — Node.js Core Modules (20 lessons)
+- `what-are-core-modules` — What are core modules?
+- `commonjs-modules` — CommonJS modules
+- `es-modules` — ES Modules
+- `require-and-import` — require and import
+- `module-exports-and-exports` — module.exports and exports
+- `module-caching` — Module caching
+- `fs-module` — fs module
+- `path-module` — path module
+- `os-module` — os module
+- `http-module` — http module
+- `https-module` — https module
+- `events-module` — events module
+- `url-module` — url module
+- `crypto-module` — crypto module
+- `util-module` — util module
+- `stream-module` — stream module
+- `buffer-module` — buffer module
+- `process-module` — process module
+- `child-process-module` — child_process module
+- `worker-threads-module` — worker_threads module
+
+## m04 — Package Management (17 lessons)
+- `npm-architecture` — npm architecture
+- `npm-vs-npx` — npm vs npx
+- `package-json` — package.json
+- `package-lock-json` — package-lock.json
+- `dependencies` — Dependencies
+- `devdependencies` — DevDependencies
+- `peer-dependencies` — Peer dependencies
+- `semantic-versioning` — Semantic versioning
+- `installing-packages` — Installing packages
+- `updating-packages` — Updating packages
+- `removing-packages` — Removing packages
+- `npm-scripts` — npm scripts
+- `global-packages` — Global packages
+- `npm-audit` — npm audit
+- `creating-custom-packages` — Creating custom packages
+- `publishing-packages` — Publishing packages
+- `understanding-node-modules` — Understanding node_modules
+
+## m05 — Asynchronous Node.js (22 lessons)
+- `synchronous-vs-asynchronous-execution` — Synchronous vs asynchronous execution
+- `blocking-vs-non-blocking-code` — Blocking vs non-blocking code
+- `callbacks` — Callbacks
+- `callback-hell` — Callback hell
+- `promises` — Promises
+- `promise-chaining` — Promise chaining
+- `promise-all` — Promise.all
+- `promise-allsettled` — Promise.allSettled
+- `promise-race` — Promise.race
+- `promise-any` — Promise.any
+- `async-await` — Async/await
+- `error-handling-in-asynchronous-code` — Error handling in asynchronous code
+- `event-loop` — Event loop
+- `event-loop-phases` — Event loop phases
+- `microtask-queue` — Microtask queue
+- `macrotasks-and-task-queues` — Macrotasks and task queues
+- `process-nexttick` — process.nextTick
+- `setimmediate` — setImmediate
+- `settimeout` — setTimeout
+- `execution-order` — Execution order
+- `libuv-thread-pool` — libuv thread pool
+- `asynchronous-i-o` — Asynchronous I/O
+
+## m06 — Buffers, Streams and Events (18 lessons)
+- `buffer-fundamentals` — Buffer fundamentals
+- `creating-buffers` — Creating buffers
+- `buffer-operations` — Buffer operations
+- `encoding` — Encoding
+- `streams-introduction` — Streams introduction
+- `readable-streams` — Readable streams
+- `writable-streams` — Writable streams
+- `duplex-streams` — Duplex streams
+- `transform-streams` — Transform streams
+- `piping` — Piping
+- `stream-events` — Stream events
+- `backpressure` — Backpressure
+- `highwatermark` — HighWaterMark
+- `eventemitter` — EventEmitter
+- `custom-events` — Custom events
+- `error-events` — Error events
+- `practical-file-streaming` — Practical file streaming
+- `streaming-large-files` — Streaming large files
+
+## m07 — HTTP and REST API Development (18 lessons)
+- `http-fundamentals` — HTTP fundamentals
+- `request-and-response-lifecycle` — Request and response lifecycle
+- `http-methods` — HTTP methods
+- `http-status-codes` — HTTP status codes
+- `headers` — Headers
+- `query-parameters` — Query parameters
+- `route-parameters` — Route parameters
+- `request-body` — Request body
+- `content-types` — Content types
+- `rest-architecture` — REST architecture
+- `rest-api-design` — REST API design
+- `api-versioning` — API versioning
+- `pagination` — Pagination
+- `filtering-and-sorting` — Filtering and sorting
+- `rate-limiting` — Rate limiting
+- `cors` — CORS
+- `api-documentation` — API documentation
+- `postman-testing` — Postman testing
+
+## m08 — Express.js (21 lessons)
+- `what-is-express` — What is Express?
+- `express-architecture` — Express architecture
+- `creating-an-express-application` — Creating an Express application
+- `routing` — Routing
+- `route-parameters` — Route parameters
+- `query-parameters` — Query parameters
+- `request-and-response-objects` — Request and response objects
+- `middleware` — Middleware
+- `application-middleware` — Application middleware
+- `router-middleware` — Router middleware
+- `built-in-middleware` — Built-in middleware
+- `custom-middleware` — Custom middleware
+- `error-handling-middleware` — Error-handling middleware
+- `controllers` — Controllers
+- `services` — Services
+- `route-organization` — Route organization
+- `request-validation` — Request validation
+- `centralized-error-handling` — Centralized error handling
+- `file-uploads` — File uploads
+- `static-files` — Static files
+- `rest-api-development` — REST API development
+
+## m09 — Database Integration (24 lessons)
+- `database-fundamentals` — Database fundamentals
+- `tables-and-relationships` — Tables and relationships
+- `sql-queries` — SQL queries
+- `joins` — Joins
+- `indexes` — Indexes
+- `transactions` — Transactions
+- `connection-pooling` — Connection pooling
+- `node-js-postgresql-integration` — Node.js PostgreSQL integration
+- `parameterized-queries` — Parameterized queries
+- `sql-injection-prevention` — SQL injection prevention
+- `nosql-fundamentals` — NoSQL fundamentals
+- `documents-and-collections` — Documents and collections
+- `crud-operations` — CRUD operations
+- `mongoose` — Mongoose
+- `schemas-and-models` — Schemas and models
+- `validation` — Validation
+- `relationships` — Relationships
+- `aggregation` — Aggregation
+- `indexes-in-mongodb` — Indexes in MongoDB
+- `orm-vs-odm` — ORM vs ODM
+- `prisma` — Prisma
+- `sequelize` — Sequelize
+- `database-architecture` — Database architecture
+- `repository-pattern` — Repository pattern
+
+## m10 — Authentication and Authorization (18 lessons)
+- `authentication-vs-authorization` — Authentication vs authorization
+- `password-hashing` — Password hashing
+- `bcrypt` — bcrypt
+- `jwt` — JWT
+- `access-tokens` — Access tokens
+- `refresh-tokens` — Refresh tokens
+- `cookies` — Cookies
+- `sessions` — Sessions
+- `authentication-middleware` — Authentication middleware
+- `role-based-access-control` — Role-based access control
+- `permission-based-access` — Permission-based access
+- `oauth-2-0-fundamentals` — OAuth 2.0 fundamentals
+- `openid-connect-fundamentals` — OpenID Connect fundamentals
+- `password-reset` — Password reset
+- `email-verification` — Email verification
+- `secure-logout` — Secure logout
+- `token-expiration` — Token expiration
+- `common-authentication-vulnerabilities` — Common authentication vulnerabilities
+
+## m11 — Advanced Node.js (24 lessons)
+- `deep-understanding-of-event-loop` — Deep understanding of event loop
+- `v8-internals` — V8 internals
+- `garbage-collection` — Garbage collection
+- `memory-management` — Memory management
+- `memory-leaks` — Memory leaks
+- `heap-and-stack` — Heap and stack
+- `worker-threads` — Worker threads
+- `child-processes` — Child processes
+- `cluster-module` — Cluster module
+- `multi-core-processing` — Multi-core processing
+- `thread-pool` — Thread pool
+- `cpu-bound-vs-i-o-bound-tasks` — CPU-bound vs I/O-bound tasks
+- `performance-profiling` — Performance profiling
+- `performance-optimization` — Performance optimization
+- `caching` — Caching
+- `redis` — Redis
+- `message-queues` — Message queues
+- `background-jobs` — Background jobs
+- `bullmq` — BullMQ
+- `websockets` — WebSockets
+- `socket-io` — Socket.IO
+- `graceful-shutdown` — Graceful shutdown
+- `process-management` — Process management
+- `pm2` — PM2
+
+## m12 — Security (17 lessons)
+- `owasp-top-10` — OWASP Top 10
+- `sql-injection` — SQL injection
+- `nosql-injection` — NoSQL injection
+- `xss` — XSS
+- `csrf` — CSRF
+- `ssrf` — SSRF
+- `broken-access-control` — Broken access control
+- `input-validation` — Input validation
+- `output-encoding` — Output encoding
+- `helmet` — Helmet
+- `rate-limiting` — Rate limiting
+- `secure-cookies` — Secure cookies
+- `secrets-management` — Secrets management
+- `environment-variables` — Environment variables
+- `dependency-vulnerabilities` — Dependency vulnerabilities
+- `secure-api-design` — Secure API design
+- `https-and-tls-fundamentals` — HTTPS and TLS fundamentals
+
+## m13 — Testing and Debugging (16 lessons)
+- `testing-fundamentals` — Testing fundamentals
+- `unit-testing` — Unit testing
+- `integration-testing` — Integration testing
+- `end-to-end-testing` — End-to-end testing
+- `jest` — Jest
+- `vitest` — Vitest
+- `node-js-test-runner` — Node.js test runner
+- `supertest` — Supertest
+- `mocking` — Mocking
+- `stubbing` — Stubbing
+- `code-coverage` — Code coverage
+- `debugging-in-vs-code` — Debugging in VS Code
+- `node-js-inspector` — Node.js inspector
+- `logging` — Logging
+- `winston-or-pino` — Winston or Pino
+- `error-monitoring` — Error monitoring
+
+## m14 — Production and Deployment (19 lessons)
+- `development-vs-production` — Development vs production
+- `environment-configuration` — Environment configuration
+- `production-builds` — Production builds
+- `docker-fundamentals` — Docker fundamentals
+- `dockerizing-node-js-applications` — Dockerizing Node.js applications
+- `docker-compose` — Docker Compose
+- `ci-cd` — CI/CD
+- `github-actions` — GitHub Actions
+- `nginx-fundamentals` — Nginx fundamentals
+- `reverse-proxy` — Reverse proxy
+- `load-balancing` — Load balancing
+- `horizontal-scaling` — Horizontal scaling
+- `vertical-scaling` — Vertical scaling
+- `cloud-deployment` — Cloud deployment
+- `database-migrations` — Database migrations
+- `health-checks` — Health checks
+- `application-monitoring` — Application monitoring
+- `logging-and-observability` — Logging and observability
+- `zero-downtime-deployment` — Zero-downtime deployment
+
+## m15 — Software Architecture and Design (18 lessons)
+- `mvc-architecture` — MVC architecture
+- `layered-architecture` — Layered architecture
+- `clean-architecture` — Clean architecture
+- `solid-principles` — SOLID principles
+- `dependency-injection` — Dependency injection
+- `design-patterns` — Design patterns
+- `repository-pattern` — Repository pattern
+- `factory-pattern` — Factory pattern
+- `singleton-pattern` — Singleton pattern
+- `strategy-pattern` — Strategy pattern
+- `observer-pattern` — Observer pattern
+- `dependency-inversion` — Dependency inversion
+- `monolithic-architecture` — Monolithic architecture
+- `microservices` — Microservices
+- `api-gateway` — API gateway
+- `event-driven-architecture` — Event-driven architecture
+- `message-driven-architecture` — Message-driven architecture
+- `distributed-systems-fundamentals` — Distributed systems fundamentals
+

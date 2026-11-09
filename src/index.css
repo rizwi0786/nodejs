@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens (RGB triplets so Tailwind can apply alpha). Dark is primary. */
+:root {
+  --bg: 248 250 252;
+  --surface: 255 255 255;
+  --raised: 241 245 249;
+  --line: 226 232 240;
+  --ink: 15 23 42;
+  --muted: 71 85 105;
+  --faint: 148 163 184;
+  --accent: 22 128 61;
+  --accent-ink: 255 255 255;
+  --warn: 180 83 9;
+  --info: 29 78 216;
+  --danger: 185 28 28;
+  --code: 246 248 250;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 13 17 23;
+  --surface: 22 27 34;
+  --raised: 30 36 45;
+  --line: 48 54 61;
+  --ink: 230 237 243;
+  --muted: 155 166 178;
+  --faint: 110 118 129;
+  --accent: 63 185 80;
+  --accent-ink: 4 20 9;
+  --warn: 210 153 34;
+  --info: 88 166 255;
+  --danger: 248 81 73;
+  --code: 13 17 23;
+  color-scheme: dark;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent/70 ring-offset-0;
+  }
+  /* Long tokens (hashes, paths, a/b/c lists) wrap instead of widening the page on phones. */
+  main {
+    overflow-wrap: break-word;
+  }
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-line bg-surface;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-accent-ink hover:bg-accent/90;
+  }
+  .btn-ghost {
+    @apply btn text-muted hover:bg-raised hover:text-ink;
+  }
+  .btn-outline {
+    @apply btn border border-line text-ink hover:bg-raised;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-md border border-line px-2 py-0.5 text-xs font-medium text-muted;
+  }
+  .section-title {
+    @apply text-sm font-semibold uppercase tracking-wide text-muted;
+  }
+}
+
+/* Thin, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--line)) transparent;
+}
+
+/* ── Syntax highlighting (Prism tokens) — theme-aware ─────── */
+:root {
+  --syn-comment: 106 115 125;
+  --syn-keyword: 207 34 46;
+  --syn-string: 10 48 105;
+  --syn-number: 5 80 174;
+  --syn-function: 130 80 223;
+  --syn-property: 5 80 174;
+  --syn-operator: 36 41 47;
+  --syn-class: 149 56 0;
+}
+.dark {
+  --syn-comment: 139 148 158;
+  --syn-keyword: 255 123 114;
+  --syn-string: 165 214 255;
+  --syn-number: 121 192 255;
+  --syn-function: 210 168 255;
+  --syn-property: 121 192 255;
+  --syn-operator: 230 237 243;
+  --syn-class: 255 166 87;
+}
+.code-tokens {
+  color: rgb(var(--ink));
+  tab-size: 2;
+}
+.code-tokens .token.comment,
+.code-tokens .token.prolog,
+.code-tokens .token.doctype {
+  color: rgb(var(--syn-comment));
+  font-style: italic;
+}
+.code-tokens .token.keyword,
+.code-tokens .token.atrule,
+.code-tokens .token.important,
+.code-tokens .token.rule,
+.code-tokens .token.request-line .token.method {
+  color: rgb(var(--syn-keyword));
+}
+.code-tokens .token.string,
+.code-tokens .token.template-string,
+.code-tokens .token.char,
+.code-tokens .token.attr-value,
+.code-tokens .token.regex,
+.code-tokens .token.url {
+  color: rgb(var(--syn-string));
+}
+.code-tokens .token.number,
+.code-tokens .token.boolean,
+.code-tokens .token.constant,
+.code-tokens .token.symbol,
+.code-tokens .token.status-code {
+  color: rgb(var(--syn-number));
+}
+.code-tokens .token.function,
+.code-tokens .token.function-variable {
+  color: rgb(var(--syn-function));
+}
+.code-tokens .token.property,
+.code-tokens .token.key,
+.code-tokens .token.header-name,
+.code-tokens .token.attr-name,
+.code-tokens .token.variable {
+  color: rgb(var(--syn-property));
+}
+.code-tokens .token.class-name,
+.code-tokens .token.builtin,
+.code-tokens .token.tag {
+  color: rgb(var(--syn-class));
+}
+.code-tokens .token.operator,
+.code-tokens .token.punctuation {
+  color: rgb(var(--syn-operator) / 0.8);
+}
+.code-tokens .token.interpolation-punctuation {
+  color: rgb(var(--syn-keyword));
+}
+
+/* ── Print (e.g. the sprint's final cheat sheet): always light, no app chrome ── */
+@media print {
+  :root,
+  .dark {
+    --bg: 255 255 255;
+    --surface: 255 255 255;
+    --raised: 241 245 249;
+    --line: 203 213 225;
+    --ink: 15 23 42;
+    --muted: 51 65 85;
+    --faint: 100 116 139;
+    --accent: 22 128 61;
+    --code: 246 248 250;
+    --syn-comment: 106 115 125;
+    --syn-keyword: 207 34 46;
+    --syn-string: 10 48 105;
+    --syn-number: 5 80 174;
+    --syn-function: 130 80 223;
+    --syn-property: 5 80 174;
+    --syn-operator: 36 41 47;
+    --syn-class: 149 56 0;
+    color-scheme: light;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}
